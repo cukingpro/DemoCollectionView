@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC9B1FFE209308B200AB823C /* StrechyHeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9B1FFD209308B200AB823C /* StrechyHeadersViewController.swift */; };
+		FC9B2000209308E900AB823C /* StrechyHeadersLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9B1FFF209308E900AB823C /* StrechyHeadersLayout.swift */; };
 		FC9CA6D7207B67DB007FD2C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9CA6D6207B67DB007FD2C4 /* AppDelegate.swift */; };
 		FC9CA6D9207B67DB007FD2C4 /* PinterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9CA6D8207B67DB007FD2C4 /* PinterestViewController.swift */; };
 		FC9CA6DC207B67DB007FD2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC9CA6DA207B67DB007FD2C4 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC9B1FFD209308B200AB823C /* StrechyHeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechyHeadersViewController.swift; sourceTree = "<group>"; };
+		FC9B1FFF209308E900AB823C /* StrechyHeadersLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechyHeadersLayout.swift; sourceTree = "<group>"; };
 		FC9CA6D3207B67DB007FD2C4 /* DemoCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9CA6D6207B67DB007FD2C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC9CA6D8207B67DB007FD2C4 /* PinterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				FC9CA6D8207B67DB007FD2C4 /* PinterestViewController.swift */,
+				FC9B1FFD209308B200AB823C /* StrechyHeadersViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -60,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB80A5020843CD1003B2476 /* PinterestLayout.swift */,
+				FC9B1FFF209308E900AB823C /* StrechyHeadersLayout.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 			files = (
 				FCB80A5120843CD1003B2476 /* PinterestLayout.swift in Sources */,
 				FC9CA6D9207B67DB007FD2C4 /* PinterestViewController.swift in Sources */,
+				FC9B1FFE209308B200AB823C /* StrechyHeadersViewController.swift in Sources */,
+				FC9B2000209308E900AB823C /* StrechyHeadersLayout.swift in Sources */,
 				FCB80A5520847E87003B2476 /* CollectionViewCell.swift in Sources */,
 				FC9CA6D7207B67DB007FD2C4 /* AppDelegate.swift in Sources */,
 			);

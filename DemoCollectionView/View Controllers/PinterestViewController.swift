@@ -35,7 +35,6 @@ class PinterestViewController: UIViewController {
 
 }
 
-
 extension PinterestViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
