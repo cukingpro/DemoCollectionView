@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Glr-YH-CE7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Glr-YH-CE7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -379,22 +380,27 @@
                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StrechyHeaderView" id="VIT-UN-Eai">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StrechyHeaderView" id="VIT-UN-Eai" customClass="StrechyHeaderView" customModule="DemoCollectionView" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTy-PG-zUa">
-                                            <rect key="frame" x="159.5" y="10.5" width="57" height="29"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="D8j-ee-ouB">
+                                            <rect key="frame" x="-113" y="-250" width="600" height="600"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="600" id="WGZ-M5-eUj"/>
+                                                <constraint firstAttribute="width" secondItem="D8j-ee-ouB" secondAttribute="height" multiplier="1:1" id="yDn-NT-L89"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="JTy-PG-zUa" firstAttribute="centerY" secondItem="VIT-UN-Eai" secondAttribute="centerY" id="a4M-f4-SRs"/>
-                                        <constraint firstItem="JTy-PG-zUa" firstAttribute="centerX" secondItem="VIT-UN-Eai" secondAttribute="centerX" id="rig-wZ-ZVT"/>
+                                        <constraint firstItem="D8j-ee-ouB" firstAttribute="centerX" secondItem="VIT-UN-Eai" secondAttribute="centerX" id="3YW-Wn-bCd"/>
+                                        <constraint firstItem="D8j-ee-ouB" firstAttribute="centerY" secondItem="VIT-UN-Eai" secondAttribute="centerY" id="g67-df-fD6"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="backgroundImageView" destination="D8j-ee-ouB" id="2fH-oF-1zU"/>
+                                        <outlet property="backgroundImageViewHeightLayoutContraint" destination="WGZ-M5-eUj" id="thc-hU-6nw"/>
+                                    </connections>
                                 </collectionReusableView>
                             </collectionView>
                         </subviews>
@@ -569,4 +575,7 @@
             <point key="canvasLocation" x="654" y="293"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="6" width="3126" height="3126"/>
+    </resources>
 </document>

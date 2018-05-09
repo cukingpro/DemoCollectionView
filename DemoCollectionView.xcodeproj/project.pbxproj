@@ -16,6 +16,7 @@
 		FC9CA6E1207B67DB007FD2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC9CA6DF207B67DB007FD2C4 /* LaunchScreen.storyboard */; };
 		FCB80A5120843CD1003B2476 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB80A5020843CD1003B2476 /* PinterestLayout.swift */; };
 		FCB80A5520847E87003B2476 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB80A5420847E87003B2476 /* CollectionViewCell.swift */; };
+		FCD3FFC120A2FD01005E42C9 /* StrechyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3FFC020A2FD01005E42C9 /* StrechyHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FC9CA6E2207B67DB007FD2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCB80A5020843CD1003B2476 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		FCB80A5420847E87003B2476 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FCD3FFC020A2FD01005E42C9 /* StrechyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechyHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,9 @@
 		FCB80A5220846522003B2476 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FCD3FFBF20A2FCD3005E42C9 /* New Group */,
 				FCB80A5320846532003B2476 /* Cell */,
+				FCD3FFC020A2FD01005E42C9 /* StrechyHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +118,13 @@
 				FCB80A5420847E87003B2476 /* CollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		FCD3FFBF20A2FCD3005E42C9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB80A5120843CD1003B2476 /* PinterestLayout.swift in Sources */,
+				FCD3FFC120A2FD01005E42C9 /* StrechyHeaderView.swift in Sources */,
 				FC9CA6D9207B67DB007FD2C4 /* PinterestViewController.swift in Sources */,
 				FC9B1FFE209308B200AB823C /* StrechyHeadersViewController.swift in Sources */,
 				FC9B2000209308E900AB823C /* StrechyHeadersLayout.swift in Sources */,
