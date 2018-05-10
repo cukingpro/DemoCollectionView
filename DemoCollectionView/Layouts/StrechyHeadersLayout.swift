@@ -30,6 +30,8 @@ class StrechyHeadersLayoutAttributes: UICollectionViewLayoutAttributes {
 
 class StrechyHeadersLayout: UICollectionViewFlowLayout {
 
+    var maximunStretchHeight: CGFloat = 0
+
     override class var layoutAttributesClass: AnyClass {
         return StrechyHeadersLayoutAttributes.self
     }
@@ -46,7 +48,7 @@ class StrechyHeadersLayout: UICollectionViewFlowLayout {
             for attributes in layoutAttributes {
                 if let elementKind = attributes.representedElementKind, elementKind == UICollectionElementKindSectionHeader {
                     var frame = attributes.frame
-                    frame.size.height = headerReferenceSize.height + deltaY
+                    frame.size.height = min(headerReferenceSize.height + deltaY, maximunStretchHeight)
                     frame.origin.y = frame.minY - deltaY
                     attributes.frame = frame
                     attributes.deltaY = deltaY

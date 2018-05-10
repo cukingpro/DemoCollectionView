@@ -11,6 +11,7 @@ import UIKit
 class StrechyHeaderView: UICollectionReusableView {
 
     private var backgroundImageViewHeight: CGFloat = 0
+    private var previousHeight: CGFloat = 0
         
     @IBOutlet weak var backgroundImageViewHeightLayoutContraint: NSLayoutConstraint!
     @IBOutlet weak var backgroundImageView: UIImageView!
@@ -23,6 +24,10 @@ class StrechyHeaderView: UICollectionReusableView {
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
         let attributes = layoutAttributes as! StrechyHeadersLayoutAttributes
-        backgroundImageViewHeightLayoutContraint.constant = backgroundImageViewHeight - attributes.deltaY
+        let height = attributes.frame.height
+        if previousHeight != height {
+            backgroundImageViewHeightLayoutContraint.constant = backgroundImageViewHeight - attributes.deltaY
+            previousHeight = height
+        }
     }
 }

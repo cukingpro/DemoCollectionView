@@ -17,6 +17,10 @@ class StrechyHeadersViewController: UIViewController {
 
         collectionView.delegate = self
         collectionView.dataSource = self
+
+        let layout = collectionView.collectionViewLayout as! StrechyHeadersLayout
+        layout.headerReferenceSize = CGSize(width: collectionView.bounds.width, height: 180)
+        layout.maximunStretchHeight = collectionView.bounds.width
     }
 }
 
