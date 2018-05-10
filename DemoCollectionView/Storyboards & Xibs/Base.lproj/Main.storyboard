@@ -517,17 +517,54 @@
         <!--Sticky Headers-->
         <scene sceneID="DgY-YI-q7o">
             <objects>
-                <viewController title="Sticky Headers" id="p86-6O-4kp" sceneMemberID="viewController">
+                <viewController title="Sticky Headers" id="p86-6O-4kp" customClass="StickyHeadersViewController" customModule="DemoCollectionView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RwK-kS-675">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xpr-rW-djh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kRT-ZC-pdk" customClass="StickyHeadersLayout" customModule="DemoCollectionView" customModuleProvider="target">
+                                    <size key="itemSize" width="375" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StickyHeaderCell" id="w2N-gB-Kgd">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="StickyHeader" id="Jjd-Rm-tWF">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xpr-rW-djh" firstAttribute="top" secondItem="AID-qz-1vj" secondAttribute="top" id="4Cl-Ka-hVR"/>
+                            <constraint firstItem="AID-qz-1vj" firstAttribute="bottom" secondItem="Xpr-rW-djh" secondAttribute="bottom" id="4a4-Uo-LVW"/>
+                            <constraint firstItem="AID-qz-1vj" firstAttribute="trailing" secondItem="Xpr-rW-djh" secondAttribute="trailing" id="WrQ-Ch-9on"/>
+                            <constraint firstItem="Xpr-rW-djh" firstAttribute="leading" secondItem="AID-qz-1vj" secondAttribute="leading" id="fwH-Dd-4dI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AID-qz-1vj"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Xpr-rW-djh" id="1Ox-GQ-Zde"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3x-q4-5gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1415" y="-1128"/>
+            <point key="canvasLocation" x="1413.5999999999999" y="-1128.4857571214393"/>
         </scene>
         <!--View Clapping-->
         <scene sceneID="sK6-lu-jy9">

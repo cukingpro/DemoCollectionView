@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC69A82220A42374009EB670 /* StickyHeadersLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC69A82120A42374009EB670 /* StickyHeadersLayout.swift */; };
+		FC69A82420A4594F009EB670 /* StickyHeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC69A82320A4594F009EB670 /* StickyHeadersViewController.swift */; };
 		FC9B1FFE209308B200AB823C /* StrechyHeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9B1FFD209308B200AB823C /* StrechyHeadersViewController.swift */; };
 		FC9B2000209308E900AB823C /* StrechyHeadersLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9B1FFF209308E900AB823C /* StrechyHeadersLayout.swift */; };
 		FC9CA6D7207B67DB007FD2C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9CA6D6207B67DB007FD2C4 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC69A82120A42374009EB670 /* StickyHeadersLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeadersLayout.swift; sourceTree = "<group>"; };
+		FC69A82320A4594F009EB670 /* StickyHeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeadersViewController.swift; sourceTree = "<group>"; };
 		FC9B1FFD209308B200AB823C /* StrechyHeadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechyHeadersViewController.swift; sourceTree = "<group>"; };
 		FC9B1FFF209308E900AB823C /* StrechyHeadersLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechyHeadersLayout.swift; sourceTree = "<group>"; };
 		FC9CA6D3207B67DB007FD2C4 /* DemoCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +54,7 @@
 			children = (
 				FC9CA6D8207B67DB007FD2C4 /* PinterestViewController.swift */,
 				FC9B1FFD209308B200AB823C /* StrechyHeadersViewController.swift */,
+				FC69A82320A4594F009EB670 /* StickyHeadersViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -68,6 +73,7 @@
 			children = (
 				FCB80A5020843CD1003B2476 /* PinterestLayout.swift */,
 				FC9B1FFF209308E900AB823C /* StrechyHeadersLayout.swift */,
+				FC69A82120A42374009EB670 /* StickyHeadersLayout.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -202,8 +208,10 @@
 				FCB80A5120843CD1003B2476 /* PinterestLayout.swift in Sources */,
 				FCD3FFC120A2FD01005E42C9 /* StrechyHeaderView.swift in Sources */,
 				FC9CA6D9207B67DB007FD2C4 /* PinterestViewController.swift in Sources */,
+				FC69A82420A4594F009EB670 /* StickyHeadersViewController.swift in Sources */,
 				FC9B1FFE209308B200AB823C /* StrechyHeadersViewController.swift in Sources */,
 				FC9B2000209308E900AB823C /* StrechyHeadersLayout.swift in Sources */,
+				FC69A82220A42374009EB670 /* StickyHeadersLayout.swift in Sources */,
 				FCB80A5520847E87003B2476 /* CollectionViewCell.swift in Sources */,
 				FC9CA6D7207B67DB007FD2C4 /* AppDelegate.swift in Sources */,
 			);
