@@ -1,55 +1,29 @@
 //
-//  PinterestLayout.swift
+//  PinterestTwoLayout.swift
 //  DemoCollectionView
 //
-//  Created by Huy Tong N.H. on 4/16/18.
+//  Created by Huy Tong N.H. on 6/7/18.
 //  Copyright © 2018 Huy Tong N.H. All rights reserved.
 //
 
 import UIKit
-import AVFoundation
 
-protocol PinterestLayoutDelegate: class {
+protocol PinterestTwoLayoutDelegate: class {
 
-    func collectionView(collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat
+    func collectionView(collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat
 }
 
-class PinterestLayoutAttributes: UICollectionViewLayoutAttributes {
+class PinterestTwoLayout: UICollectionViewLayout {
 
-    var photoHeight: CGFloat = 0
-
-    override func copy(with zone: NSZone? = nil) -> Any {
-        let copy = super.copy(with: zone) as! PinterestLayoutAttributes
-        copy.photoHeight = photoHeight
-        return copy
-    }
-
-    override func isEqual(_ object: Any?) -> Bool {
-        if let attributes = object as? PinterestLayoutAttributes {
-            if attributes.photoHeight == photoHeight {
-                return true
-            }
-        }
-        return false
-    }
-
-}
-
-class PinterestLayout: UICollectionViewLayout {
-
-    var delegate: PinterestLayoutDelegate!
-    var numberOfColumns: Int = 1
+    var numberOfColumns: Int = 2
     var cellPadding: CGFloat = 3
+    var delegate: PinterestTwoLayoutDelegate!
 
-    private var cache = [PinterestLayoutAttributes]()
+    private var cache = [UICollectionViewLayoutAttributes]()
     private var contentHeight: CGFloat = 0
     private var width: CGFloat {
         let inset = collectionView!.contentInset
         return collectionView!.bounds.width - (inset.left + inset.right)
-    }
-
-    override class var layoutAttributesClass: AnyClass {
-        return PinterestLayoutAttributes.self
     }
 
     override var collectionViewContentSize: CGSize {
@@ -74,15 +48,13 @@ class PinterestLayout: UICollectionViewLayout {
         for item in 0..<collectionView!.numberOfItems(inSection: 0) {
             let indexPath = IndexPath(item: item, section: 0)
 
-            let width = columnWidth - 2 * cellPadding
-            let photoHeight = delegate.collectionView(collectionView: collectionView!, heightForPhotoAtIndexPath: indexPath, withWidth: width)
-            let height = photoHeight + cellPadding * 2
+            let width = columnWidth
+            let height = delegate.collectionView(collectionView: collectionView!, heightForPhotoAtIndexPath: indexPath)
 
-            let frame = CGRect(x: xOffsets[column], y: yOffsets[column], width: columnWidth, height: height)
+            let frame = CGRect(x: xOffsets[column], y: yOffsets[column], width: width, height: height)
             let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
-            let attributes = PinterestLayoutAttributes(forCellWith: indexPath)
+            let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
             attributes.frame = insetFrame
-            attributes.photoHeight = photoHeight
             cache.append(attributes)
             contentHeight = max(contentHeight, frame.maxY)
             yOffsets[column] = yOffsets[column] + height

@@ -58,8 +58,4 @@ extension PinterestViewController: PinterestLayoutDelegate {
         let rect = AVMakeRect(aspectRatio: photo.size, insideRect: boundingRect)
         return rect.height
     }
-
-    func collectionView(collectionView: UICollectionView, heightForAnnotationAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
-        return 60
-    }
 }

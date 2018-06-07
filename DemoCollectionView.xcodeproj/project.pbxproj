@@ -16,6 +16,8 @@
 		FC9CA6DC207B67DB007FD2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC9CA6DA207B67DB007FD2C4 /* Main.storyboard */; };
 		FC9CA6DE207B67DB007FD2C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9CA6DD207B67DB007FD2C4 /* Assets.xcassets */; };
 		FC9CA6E1207B67DB007FD2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC9CA6DF207B67DB007FD2C4 /* LaunchScreen.storyboard */; };
+		FCAFEBB020C8FF8800FF7719 /* PinterestTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFEBAF20C8FF8800FF7719 /* PinterestTwoViewController.swift */; };
+		FCAFEBB220C9013C00FF7719 /* PinterestTwoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFEBB120C9013C00FF7719 /* PinterestTwoLayout.swift */; };
 		FCB80A5120843CD1003B2476 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB80A5020843CD1003B2476 /* PinterestLayout.swift */; };
 		FCB80A5520847E87003B2476 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB80A5420847E87003B2476 /* CollectionViewCell.swift */; };
 		FCD3FFC120A2FD01005E42C9 /* StrechyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3FFC020A2FD01005E42C9 /* StrechyHeaderView.swift */; };
@@ -33,6 +35,8 @@
 		FC9CA6DD207B67DB007FD2C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC9CA6E0207B67DB007FD2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC9CA6E2207B67DB007FD2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAFEBAF20C8FF8800FF7719 /* PinterestTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestTwoViewController.swift; sourceTree = "<group>"; };
+		FCAFEBB120C9013C00FF7719 /* PinterestTwoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestTwoLayout.swift; sourceTree = "<group>"; };
 		FCB80A5020843CD1003B2476 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		FCB80A5420847E87003B2476 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FCD3FFC020A2FD01005E42C9 /* StrechyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechyHeaderView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 				FC9CA6D8207B67DB007FD2C4 /* PinterestViewController.swift */,
 				FC9B1FFD209308B200AB823C /* StrechyHeadersViewController.swift */,
 				FC69A82320A4594F009EB670 /* StickyHeadersViewController.swift */,
+				FCAFEBAF20C8FF8800FF7719 /* PinterestTwoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -74,6 +79,7 @@
 				FCB80A5020843CD1003B2476 /* PinterestLayout.swift */,
 				FC9B1FFF209308E900AB823C /* StrechyHeadersLayout.swift */,
 				FC69A82120A42374009EB670 /* StickyHeadersLayout.swift */,
+				FCAFEBB120C9013C00FF7719 /* PinterestTwoLayout.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -160,7 +166,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Huy Tong N.H.";
 				TargetAttributes = {
 					FC9CA6D2207B67DB007FD2C4 = {
@@ -205,6 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAFEBB020C8FF8800FF7719 /* PinterestTwoViewController.swift in Sources */,
+				FCAFEBB220C9013C00FF7719 /* PinterestTwoLayout.swift in Sources */,
 				FCB80A5120843CD1003B2476 /* PinterestLayout.swift in Sources */,
 				FCD3FFC120A2FD01005E42C9 /* StrechyHeaderView.swift in Sources */,
 				FC9CA6D9207B67DB007FD2C4 /* PinterestViewController.swift in Sources */,
@@ -253,6 +261,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -260,6 +269,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -310,6 +320,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -317,6 +328,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

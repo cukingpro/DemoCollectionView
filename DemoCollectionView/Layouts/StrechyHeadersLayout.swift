@@ -12,20 +12,20 @@ class StrechyHeadersLayoutAttributes: UICollectionViewLayoutAttributes {
     
     var deltaY: CGFloat = 0
 
-    override func copy(with zone: NSZone? = nil) -> Any {
-        let copy = super.copy(with: zone) as! StrechyHeadersLayoutAttributes
-        copy.deltaY = deltaY
-        return copy
-    }
-
-    override func isEqual(_ object: Any?) -> Bool {
-        if let attributes = object as? StrechyHeadersLayoutAttributes {
-            if attributes.deltaY == deltaY {
-                return super.isEqual(object)
-            }
-        }
-        return false
-    }
+//    override func copy(with zone: NSZone? = nil) -> Any {
+//        let copy = super.copy(with: zone) as! StrechyHeadersLayoutAttributes
+//        copy.deltaY = deltaY
+//        return copy
+//    }
+//
+//    override func isEqual(_ object: Any?) -> Bool {
+//        if let attributes = object as? StrechyHeadersLayoutAttributes {
+//            if attributes.deltaY == deltaY {
+//                return super.isEqual(object)
+//            }
+//        }
+//        return false
+//    }
 }
 
 class StrechyHeadersLayout: UICollectionViewFlowLayout {
